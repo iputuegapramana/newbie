@@ -14,11 +14,11 @@ body {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0;
 }
 
 .container h1 {
-  color: #386641;
+  color: #427852;
 }
 
 .navbar {
@@ -109,7 +109,7 @@ body {
     color: #364f6b;
 }
 
-.container-kolom h2 {
+.container-features h2 {
     font-family: 'comic sans ms';
     font-weight: 800;
     font-size: 45px;
@@ -192,41 +192,52 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
+.footer-section h3,
 .footer-section h4 {
   margin-bottom: 10px;
 }
-
 .footer-section p {
   margin-bottom: 5px;
 }
 
-@media (max-width: 768px) {
-  .Pendakian-content {
-    flex-direction: column; 
-  }
-  .pendakian-img img {
-    max-width: 100%;
-  }
-  .komunitas-kolom {
-    width: 100%; 
-    max-width: 100%;
-  }
-  .about-content {
-    flex-direction: column; 
-  }
-  .about img {
-    max-width: 100%;
-  }
-  .footer-section {
-    flex-basis: 100%; 
-  }
-  .navbar ul {
-    flex-direction: column; 
-    align-items: center; 
-  }
-  .navbar ul li {
-    margin-bottom: 10px;
-  }
+@media (max-width: 767px) { 
+    .container {
+        width: 95%; 
+        padding: 0 10px; 
+    }
+    .Pendakian-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .Pendakian .text h1 {
+        font-size: 30px; 
+    }
+    .pendakian-img img {
+        max-width: 100%; 
+        margin-top: 20px; 
+    }
+    .komunitas-list {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .komunitas-kolom {
+        width: 90%; 
+        margin-bottom: 20px; 
+    }
+    .about-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .about img {
+        max-width: 100%;
+        margin-top: 20px; 
+    }
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul li {
+        margin-bottom: 10px; 
+    }
 }
- 
+
